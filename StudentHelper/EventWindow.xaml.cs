@@ -23,8 +23,19 @@ namespace StudentHelper {
             weekDay = weekday;
         }
 
-        DateTime staTime = Convert.ToDateTime(startdato.SelectedeItem);
+        
 
-        TimeSpan 
+        
+
+        private void Button_HWComplete_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime staTime = Convert.ToDateTime(Date.SelectedDate);
+
+            TimeSpan timest = new TimeSpan(Convert.ToInt32(Hours.SelectedItem.ToString()), Convert.ToInt32(Minutes.SelectedItem.ToString()), 0);
+
+            staTime = staTime + timest;
+
+
+        } 
     }
 }

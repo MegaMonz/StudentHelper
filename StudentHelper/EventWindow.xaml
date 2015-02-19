@@ -10,13 +10,16 @@
         <Button Name="ButtonSubjectAdd" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="106,227,0,0"/>
         <Button Name="Button_HWAdd" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="428,66,0,0"/>
         <ListBox Name="Listbox_HomeworkDescription" HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="200" Margin="428,116,0,0"/>
-        <Button Name="Button_HWComplete" Content="Complete" Margin="428,287,135,10"/>
+        <Button Name="Button_HWComplete" Content="Complete" Margin="428,287,135,10" Click="Button_HWComplete_Click"/>
         <ComboBox Name="ComboBox_Subject" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="106,133,0,0"/>
         <Label Content="Day" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,28,0,0"/>
         <Label Content="Teachers" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,78,0,0"/>
         <Label Content="Subject" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,133,0,0"/>
         <Label Content="New Subject" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,182,0,0"/>
         <Label Content="Description" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="333,21,0,0"/>
+        <DatePicker Name="Date" HorizontalAlignment="Left" Margin="266,116,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="Hours" HorizontalAlignment="Left" Margin="284,182,0,0" VerticalAlignment="Top" Width="51"/>
+        <ComboBox Name="Minutes" HorizontalAlignment="Left" Margin="248,247,0,0" VerticalAlignment="Top" Width="52"/>
 
     </Grid>
 </Window>

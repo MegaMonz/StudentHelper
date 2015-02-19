@@ -11,9 +11,15 @@ namespace StudentHelper.Model
         public string Day { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public Event(string day, DateTime , )
+        public int SubjectID { get; set; }
+        public string Description { get; set; }
+        public Event(string day, DateTime startdate, DateTime enddate, int subjectid, string description )
         {
-            WeekNr = weeknr;
+            Day = day;
+            StartDate = startdate;
+            EndDate = enddate;
+            SubjectID = subjectid;
+            Description = description;
         }
     }
 }
