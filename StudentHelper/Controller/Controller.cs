@@ -12,7 +12,7 @@ namespace StudentHelper.Controller
         public List<string> GetWeeks()
         {
             List<string> weekListStrings = new List<string>();
-            foreach (Model.Event e in _DBF.GetWeeks())
+            foreach (Model.Week e in _DBF.GetWeeks())
             {
                 weekListStrings.Add(e.WeekNr.ToString());
             }
