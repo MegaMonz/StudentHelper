@@ -17,30 +17,30 @@ namespace StudentHelper.Controller
 
             SqlConnection SqlConnection = new SqlConnection(DBConnectionString);
 
-            try
-            {
-                SqlConnection.Open();
+            //try
+            //{
+            //    SqlConnection.Open();
 
-                SqlCommand cmd = new SqlCommand("StoredProcedure", SqlConnection);
-                cmd.CommandType = CommandType.StoredProcedure;
+            //    SqlCommand cmd = new SqlCommand("StoredProcedure", SqlConnection);
+            //    cmd.CommandType = CommandType.StoredProcedure;
 
-                SqlDataReader rdr = cmd.ExecuteReader();
+            //    SqlDataReader rdr = cmd.ExecuteReader();
 
-                while (rdr.Read() && rdr.HasRows)
-                {
-                    WeekList.Add(new Model.Event(int.Parse(rdr["Parameter"].ToString())));
-                }
-            }
-            catch (SqlException e)
-            {
-                System.Windows.MessageBox.Show(e.Message);
+            //    while (rdr.Read() && rdr.HasRows)
+            //    {
+            //        WeekList.Add(new Model.Event(int.Parse(rdr["Parameter"].ToString())));
+            //    }
+            //}
+            //catch (SqlException e)
+            //{
+            //    System.Windows.MessageBox.Show(e.Message);
 
-            }
-            finally
-            {
-                SqlConnection.Close();
-                SqlConnection.Dispose();
-            }
+            //}
+            //finally
+            //{
+            //    SqlConnection.Close();
+            //    SqlConnection.Dispose();
+            //}
 
             return WeekList;
 
