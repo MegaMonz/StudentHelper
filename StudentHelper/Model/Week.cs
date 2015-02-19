@@ -15,11 +15,5 @@ namespace StudentHelper.Model
         public List<Event> Friday { get; set; }
         public List<Event> Saturday { get; set; }
         public List<Event> Sunday { get; set; }
-        public int WeekNr { get; set; }
-
-        public Week(int weeknr)
-        {
-            WeekNr = weeknr;
-        }
     }
 }

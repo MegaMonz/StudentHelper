@@ -8,11 +8,12 @@ namespace StudentHelper.Model
 {
     class Event
     {
-        public Event(int weeknr)
+        public string Day { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public Event(string day, DateTime , )
         {
             WeekNr = weeknr;
         }
-        public int WeekNr { get; set; }
-
     }
 }

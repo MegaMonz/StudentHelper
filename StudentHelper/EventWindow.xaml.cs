@@ -22,5 +22,9 @@ namespace StudentHelper {
             InitializeComponent();
             weekDay = weekday;
         }
+
+        DateTime staTime = Convert.ToDateTime(startdato.SelectedeItem);
+
+        TimeSpan 
     }
 }
