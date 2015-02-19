@@ -17,8 +17,10 @@ namespace StudentHelper {
     /// Interaction logic for EventWindow.xaml
     /// </summary>
     public partial class EventWindow : Window {
-        public EventWindow() {
+        private string weekDay;
+        public EventWindow(string weekday) {
             InitializeComponent();
+            weekDay = weekday;
         }
     }
 }
