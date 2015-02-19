@@ -18,8 +18,10 @@ namespace StudentHelper {
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
+        Controller.Controller _controller;
         public MainWindow() {
             InitializeComponent();
+            _controller = new Controller.Controller();
         }
 
         private void AddEvent_Click(object sender, RoutedEventArgs e)

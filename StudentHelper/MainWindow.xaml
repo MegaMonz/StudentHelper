@@ -4,7 +4,7 @@
         Title="MainWindow" Height="350" Width="741">
     <Grid>
         <Label Content="Student Helper" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="256,10,0,0" Width="164" Height="40" FontSize="22" FontWeight="Bold"/>
-        <ComboBox HorizontalAlignment="Left" Margin="53,14,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="WeekDropdown" HorizontalAlignment="Left" Margin="53,14,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Week" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label Content="Monday" HorizontalAlignment="Left" Margin="24,55,0,0" VerticalAlignment="Top"  />
         <Label Content="Tuesday" HorizontalAlignment="Left" Margin="105,55,0,0" VerticalAlignment="Top"/>
