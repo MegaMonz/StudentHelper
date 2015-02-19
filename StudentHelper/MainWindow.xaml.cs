@@ -22,6 +22,12 @@ namespace StudentHelper {
         public MainWindow() {
             InitializeComponent();
             _controller = new Controller.Controller();
+
+            WeekDropdown.SelectedIndex = 0;
+            foreach (string _week in _controller.GetWeeks())
+            {
+                WeekDropdown.Items.Add(_week);
+            }
         }
 
         private void AddEvent_Click(object sender, RoutedEventArgs e)
