@@ -11,12 +11,12 @@ namespace StudentHelper.Controller
         DatabaseFacade _DBF = new DatabaseFacade();
         public List<string> GetWeeks()
         {
-            List<string> weekList = new List<string>();
+            List<string> weekListStrings = new List<string>();
             foreach (Model.Event e in _DBF.GetWeeks())
             {
-                weekList.Add(e.WeekNr.ToString());
+                weekListStrings.Add(e.WeekNr.ToString());
             }
-            return weekList;
+            return weekListStrings;
         }
     }
 }
