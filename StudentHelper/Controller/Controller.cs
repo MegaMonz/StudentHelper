@@ -8,5 +8,9 @@ namespace StudentHelper.Controller
 {
     class Controller
     {
+        //public List<string> GetWeek()
+        //{
+
+        //}
     }
 }
