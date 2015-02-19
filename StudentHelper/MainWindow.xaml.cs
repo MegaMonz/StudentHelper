@@ -21,5 +21,10 @@ namespace StudentHelper {
         public MainWindow() {
             InitializeComponent();
         }
+
+        private void AddEvent_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
