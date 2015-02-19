@@ -1,0 +1,22 @@
+﻿<Window x:Class="StudentHelper.EventWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EventWindow" Height="348.548" Width="646.058">
+    <Grid>
+        <ComboBox Name="ComboBox_Teachers" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="106,82,0,0"/>
+        <ComboBox Name="ComboBox_Day" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="106,28,0,0"/>
+        <TextBox Name="TextBox_HWDescription" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="428,16,0,0"/>
+        <TextBox Name="TextBox_Subject" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="106,182,0,0"/>
+        <Button Name="ButtonSubjectAdd" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="106,227,0,0"/>
+        <Button Name="Button_HWAdd" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="428,66,0,0"/>
+        <ListBox Name="Listbox_HomeworkDescription" HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="200" Margin="428,116,0,0"/>
+        <Button Name="Button_HWComplete" Content="Complete" Margin="428,287,135,10"/>
+        <ComboBox Name="ComboBox_Subject" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="106,133,0,0"/>
+        <Label Content="Day" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,28,0,0"/>
+        <Label Content="Teachers" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,78,0,0"/>
+        <Label Content="Subject" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,133,0,0"/>
+        <Label Content="New Subject" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,182,0,0"/>
+        <Label Content="Description" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="333,21,0,0"/>
+
+    </Grid>
+</Window>
