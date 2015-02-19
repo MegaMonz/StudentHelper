@@ -8,6 +8,10 @@ namespace StudentHelper.Model
 {
     class Event
     {
+        public Event(int weeknr)
+        {
+            WeekNr = weeknr;
+        }
         public int WeekNr { get; set; }
 
     }
