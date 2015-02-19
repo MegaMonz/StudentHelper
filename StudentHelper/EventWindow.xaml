@@ -18,7 +18,7 @@
         <Label Content="New Subject" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,182,0,0"/>
         <Label Content="Description" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="333,21,0,0"/>
         <DatePicker Name="Date" HorizontalAlignment="Left" Margin="266,116,0,0" VerticalAlignment="Top"/>
-        <ComboBox Name="Hours" HorizontalAlignment="Left" Margin="284,182,0,0" VerticalAlignment="Top" Width="51"/>
+        <ComboBox Name="Hours" HorizontalAlignment="Left" Margin="284,182,0,0" VerticalAlignment="Top" Width="51" SelectionChanged="Hours_SelectionChanged" DropDownOpened="Hours_DropDownOpened"/>
         <ComboBox Name="Minutes" HorizontalAlignment="Left" Margin="248,247,0,0" VerticalAlignment="Top" Width="52"/>
 
     </Grid>

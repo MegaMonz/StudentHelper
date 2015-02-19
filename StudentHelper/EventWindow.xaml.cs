@@ -36,6 +36,10 @@ namespace StudentHelper {
             staTime = staTime + timest;
 
 
+        }
+
+        private void Hours_DropDownOpened(object sender, EventArgs e) {
+
         } 
     }
 }

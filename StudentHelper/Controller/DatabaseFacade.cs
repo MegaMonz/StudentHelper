@@ -12,7 +12,7 @@ namespace StudentHelper.Controller
     {
         static SqlConnection dbconn;
         static string _connectionString = "Server=ealdb1.eal.local;" + "Database=EJL04_DB;" + "User Id=ejl04_usr;" + "Password=Baz1nga4;";
-        public CreatEvent(Model.Event Event) {
+        public void CreatEvent(Model.Event cevent) {
             try
             {
                 ConnectDB();
@@ -20,17 +20,20 @@ namespace StudentHelper.Controller
                 SqlCommand cmd = new SqlCommand("CreateEvent", dbconn);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter sqlModel = new SqlParameter("@E_Day", Event.Day);
-                cmd.Parameters.Add(sqlModel);
+                SqlParameter sqlDay = new SqlParameter("@E_Day", cevent.Day);
+                cmd.Parameters.Add(sqlDay);
 
-                SqlParameter sqlSensorID = new SqlParameter("@SensorID", sensor.SensorID);
-                cmd.Parameters.Add(sqlSensorID);
+                SqlParameter sqlStartDate = new SqlParameter("@E_StartDate", cevent.StartDate);
+                cmd.Parameters.Add(sqlStartDate);
 
-                SqlParameter sqlCprNr = new SqlParameter("@CPRNR", sensor.P_CprNr);
-                cmd.Parameters.Add(sqlCprNr);
+                SqlParameter sqlEndDate = new SqlParameter("@E_EndDate", cevent.EndDate);
+                cmd.Parameters.Add(sqlEndDate);
 
-                SqlParameter sqlBatteryLastCharged = new SqlParameter("@BatteryLastCharged", sensor.BatteryLastChanged);
-                cmd.Parameters.Add(sqlBatteryLastCharged);
+                SqlParameter sqlSubjectID = new SqlParameter("@E_S_SubjectID", cevent.SubjectID);
+                cmd.Parameters.Add(sqlSubjectID);
+
+                SqlParameter sqlDescription = new SqlParameter("@E_Description", cevent.Description);
+                cmd.Parameters.Add(sqlDescription);
 
                 cmd.ExecuteNonQuery();
 
