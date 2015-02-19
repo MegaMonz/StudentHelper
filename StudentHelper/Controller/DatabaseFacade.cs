@@ -11,10 +11,8 @@ namespace StudentHelper.Controller
     class DatabaseFacade
     {
         string DBConnectionString = "Server=ealdb1.eal.local;" + "Database=EJL04_DB;" + "User Id=ejl04_usr;" + "Password=Baz1nga4;";
-        public List<Model.Week> GetWeeks()
+        public 
         {
-            List<Model.Week> WeekList = new List<Model.Week>();
-
             SqlConnection SqlConnection = new SqlConnection(DBConnectionString);
 
             //try
@@ -42,7 +40,7 @@ namespace StudentHelper.Controller
             //    SqlConnection.Dispose();
             //}
 
-            return WeekList;
+            
 
 
         }
