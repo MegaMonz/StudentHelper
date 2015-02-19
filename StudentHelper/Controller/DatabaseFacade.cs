@@ -11,9 +11,9 @@ namespace StudentHelper.Controller
     class DatabaseFacade
     {
         string DBConnectionString = "Server=ealdb1.eal.local;" + "Database=EJL04_DB;" + "User Id=ejl04_usr;" + "Password=Baz1nga4;";
-        public List<Model.Event> GetWeeks()
+        public List<Model.Week> GetWeeks()
         {
-            List<Model.Event> WeekList = new List<Model.Event>();
+            List<Model.Week> WeekList = new List<Model.Week>();
 
             SqlConnection SqlConnection = new SqlConnection(DBConnectionString);
 
@@ -28,7 +28,7 @@ namespace StudentHelper.Controller
 
             //    while (rdr.Read() && rdr.HasRows)
             //    {
-            //        WeekList.Add(new Model.Event(int.Parse(rdr["Parameter"].ToString())));
+            //        WeekList.Add(new Model.Week(int.Parse(rdr["Parameter"].ToString())));
             //    }
             //}
             //catch (SqlException e)
