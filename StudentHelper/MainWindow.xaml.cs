@@ -32,7 +32,7 @@ namespace StudentHelper {
 
         private void AddEvent_Click(object sender, RoutedEventArgs e)
         {
-
+            new EventWindow(WeekDropdown.SelectedItem.ToString()).Show();
         }
     }
 }
